@@ -1,0 +1,61 @@
+/* Custom styles */
+.status-badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.status-yet-to-start {
+    @apply bg-gray-100 text-gray-800;
+}
+
+.status-triggered {
+    @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-completed {
+    @apply bg-green-100 text-green-800;
+}
+
+.status-failed {
+    @apply bg-red-100 text-red-800;
+}
+
+.batch-card {
+    @apply bg-gray-50 rounded-lg p-4 border border-gray-200;
+}
+
+/* Form input styles */
+input[type="text"], select {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+}
+
+/* Animation for status updates */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Loading spinner */
+.spinner {
+    @apply animate-spin h-5 w-5 text-blue-600;
+}
+
+/* Toast notification */
+.toast {
+    @apply fixed bottom-4 right-4 px-6 py-3 rounded-lg shadow-lg text-white transform transition-transform duration-300;
+}
+
+.toast-success {
+    @apply bg-green-600;
+}
+
+.toast-error {
+    @apply bg-red-600;
+}
+
+.toast-info {
+    @apply bg-blue-600;
+} 
