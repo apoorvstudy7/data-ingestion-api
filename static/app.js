@@ -1,5 +1,5 @@
 // API endpoints
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = window.location.origin;
 
 // Store recent submissions
 let recentSubmissions = [];
